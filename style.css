@@ -138,13 +138,14 @@ a {
   margin-top: 24px;
 }
 
+.branch {
+  height: 50vh;
+  min-height: auto;
+}
+
 .branch .container {
   display: flex;
   justify-content: center;
-}
-
-.branch {
-  height: 50vh;
 }
 
 .branch-card {
