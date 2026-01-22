@@ -9,7 +9,6 @@ section {
   padding: 0 300px;
   height: 100vh;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -32,16 +31,15 @@ nav ul {
 }
 
 a {
-color: white;
-text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .hero {
   background-color: #1F2937;
-  gap: 32px;
 }
 
-.main-text {
+.hero-text {
   color: #F9FAF8;
   font-size: 48px;
   font-weight: 900;
@@ -64,10 +62,46 @@ text-decoration: none;
 
 .services {
   flex-flow: row wrap;
+  justify-content: space-around;
   gap: 24px;
 }
 
 .service-card {
-  width: 200px;
+  text-align: center;
+  border-radius: 16px;
+  width: 300px;
+  height: 400px;
+  padding: 16px;
   background-color: #E5E7EB;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.service-icon, .service-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.review {
+  font-size: 48px;
+  background-color: #E5E7EB;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviewer {
+  font-size: 24px;
+  font-weight: bold;
+  align-self: flex-end;
 }
